@@ -1,0 +1,108 @@
+.container{
+    background-color: rgb(161, 199, 233);
+    width:40%;
+    height:50%;
+    position:fixed;
+    padding:10px;
+    top:0px;
+    right:0px;
+    margin:130px;
+    border-radius:10%;
+    box-shadow:0px 0px 5px rgba(0,0,0,0.3); 
+}
+body{
+    background-image:url("https://media.istockphoto.com/id/1271863211/photo/note-pad-and-pencil.webp?b=1&s=170667a&w=0&k=20&c=AGKg04_O_SidW-fZzRPW2IyRP0FC3oZbE3mwIQjayac=");
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    background-attachment: fixed;
+
+}
+.upper{
+    display:flex;
+}
+
+.upper img{
+    width:20px;
+    height:20px;
+    
+    margin:10px;
+    margin-top:20px;
+    margin-left:10px;
+
+}
+.upper h2{
+    margin-left:250px;
+    display:flex;
+
+}
+.lower{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+}
+#taskInput{
+    border-style: solid;
+    border-radius:10px;
+    height:40%;
+    width:60%;
+    margin-left:75px;
+}
+#addButton{
+    border-style: solid;
+    border-radius:10px;
+    background-color: black;
+    color:white;
+    height:10%;
+    width:10%;
+
+}
+
+ul{
+    list-style-type:none;
+
+}
+ ul li{
+    font-size:15px;
+    list-style:none;
+    padding:12px 8px 12px 50px;
+    user-select:none;
+    cursor:pointer;
+    position:relative;
+}
+
+ul li::before{
+    content:" ";
+    position:absolute;
+    height:28px;
+    width:28px;
+    border-radius:50%;
+    background-image: url("unchecked.png");
+    background-size:cover;
+    background-position:center;
+    top:8px;
+    left:10px;
+}
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("check1.png");
+}
+ul li span{
+    position:absolute;
+    right:5px;
+    top:15px;
+    width:30px;
+    height:20px;
+    font-size:15px;
+    color:#555;
+    line-height:40px;
+    text-align:center;
+    border-radius:15%;
+}
+/* li span:hover{
+    background-color: rgb(129, 129, 125);
+    
+}*/
